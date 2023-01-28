@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Cgpa</title>
+</head>
+
+<body>
+
+    <form>
+        <label>Subject 1:</label>
+        <input type="number" id="sub1c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub1m" placeholder="Marks" min="0" max="100">
+        <br>
+        <label>Subject 2:</label>
+        <input type="number" id="sub2c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub2m" placeholder="Marks" min="0" max="100">
+        <br>
+        <label>Subject 3:</label>
+        <input type="number" id="sub3c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub3m" placeholder="Marks" min="0" max="100">
+        <br>
+        <label>Subject 4:</label>
+        <input type="number" id="sub4c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub4m" placeholder="Marks" min="0" max="100">
+        <br>
+        <label>Subject 5:</label>
+        <input type="number" id="sub5c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub5m" placeholder="Marks" min="0" max="100">
+        <br>
+        <label>Subject 6:</label>
+        <input type="number" id="sub6c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub6m" placeholder="Marks" min="0" max="100">
+        <br>
+        <label>Subject 7:</label>
+        <input type="number" id="sub7c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub7m" placeholder="Marks" min="0" max="100">
+        <br>
+        <label>Subject 8:</label>
+        <input type="number" id="sub8c" placeholder="Credits" min="0" max="5">
+        <input type="number" id="sub8m" placeholder="Marks" min="0" max="100">
+        <br>
+        <button type="button" onclick="calculateCGPA()">Calculate</button>
+      </form>
+      <br>
+      <label>CGPA:</label>
+      <span id="cgpa"></span>
+      
+</body>
+
+  <script>
+
+function calculateCGPA() {
+    // Collecting subject credits and marks from the form
+    let sub1c = document.getElementById("sub1c").value;
+    let sub1m = document.getElementById("sub1m").value;
+    let sub2c = document.getElementById("sub2c").value;
+    let sub2m = document.getElementById("sub2m").value;
+    let sub3c = document.getElementById("sub3c").value;
+    let sub3m = document.getElementById("sub3m").value;
+    let sub4c = document.getElementById("sub4c").value;
+    let sub4m = document.getElementById("sub4m").value;
+    let sub5c = document.getElementById("sub5c").value;
+    let sub5m = document.getElementById("sub5m").value;
+    let sub6c = document.getElementById("sub6c").value;
+    let sub6m = document.getElementById("sub6m").value;
+    let sub7c = document.getElementById("sub7c").value;
+    let sub7m = document.getElementById("sub7m").value;
+    let sub8c = document.getElementById("sub8c").value;
+    let sub8m = document.getElementById("sub8m").value;
+
+    //Calculating CGPA
+    let numerator = (sub1c*sub1m)+(sub2c*sub2m)+(sub3c*sub3m)+(sub4c*sub4m)+(sub5c*sub5m)+(sub6c*sub6m)+(sub7c*sub7m)+(sub8c*sub8m);
+    let denominator = (sub1c+sub2c+sub3c+sub4c+sub5c+sub6c+sub7c+sub8c)*10;
+    let cgpa = numerator/denominator;
+
+    // formatting to 2 decimal places
+    const formattedCgpa = cgpa.toFixed(2);
+    document.getElementById("cgpa").innerHTML = formattedCgpa;
+}
+
+  </script>
+
+</html>
