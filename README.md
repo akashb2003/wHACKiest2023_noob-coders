@@ -15,7 +15,8 @@ One possible website that solves problems for college students. Our website offe
 4. Reservations for gym: Allows students to reserve these spaces in advance for gym and brings best of their time for workout.
 <br><br>
 5. Information about clubs: Provides information about the various clubs and organizations on campus, including meeting times, events, and contact information for the leaders.<br><br>
-
+6.We have also added dark and light theams to our website
+<br><br>
 Overall, Our website aims to streamline the college experience and make it more manageable for students.
 <br>
 Click <a href="https://drive.google.com/drive/folders/1EY-6XDlC_S2n0d5VN4BKLpEHh2X5dYBK">here</a> for ppt and video presentation of the website
